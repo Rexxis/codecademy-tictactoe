@@ -4,7 +4,7 @@ print("")
 print("David Harendza - July 2022")
 
 class TicTacToe:
-    map = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+
     def __init__(self):
         self.board = []
 

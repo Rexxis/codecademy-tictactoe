@@ -109,8 +109,8 @@ def startGame():
     print("---------------")
     print("")
     if input("Are you ready to start the game ? (Y/N): ") == "Y":
-        print("GAME STARTED")
         print("")
+        print("GAME STARTED")
         gameRunning = True
     else:
         gameRunning = False

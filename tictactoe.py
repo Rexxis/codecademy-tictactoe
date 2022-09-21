@@ -29,12 +29,16 @@ class TicTacToe:
     
     def playerInput(self):
         global currentPlayer
-        print(f"Player {currentPlayer} turn")
-        inp = int(input("Choose your position (1-9): "))
-        if inp >= 1 and inp <= 9 and self.board[inp-1] == "-":
-            self.board[inp-1] = currentPlayer
-        else:
-            print("Other player is already in the position. Choose other position!")
+        i = False
+        while i == False:
+            print(f"Player {currentPlayer} turn")
+            inp = int(input("Choose your position (1-9): "))
+            if inp >= 1 and inp <= 9 and self.board[inp-1] == "-":
+                self.board[inp-1] = currentPlayer
+                i = True
+            else:
+                print("Other player is already in the position. Choose other position!")
+                i = False
 
     def checkHorizontal(self):
         global winner

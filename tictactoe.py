@@ -73,6 +73,7 @@ class TicTacToe:
         global gameRunning
         if "-" not in self.board:
             self.printboard()
+            print("GAME OVER")
             print("It's a tie!")
             gameRunning = False
 
@@ -120,5 +121,7 @@ while gameRunning:
     refresh_screen()
     instance1.playerInput()
     instance1.checkWin()
+    if winner != None:
+        break
     instance1.checkTie()
     instance1.switchPlayer()

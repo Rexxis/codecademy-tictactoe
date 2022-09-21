@@ -8,10 +8,10 @@ winner = None
 gameRunning = None
 currentPlayer = "X"
 
-class Player:
+"""class Player:
     def __init__(self, player="X"):
         self.player = player
-
+"""
 class TicTacToe:
 
     def __init__(self):
